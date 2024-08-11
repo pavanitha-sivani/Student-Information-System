@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="prashu.css">
+</head>
+<body>
+    <h1>Student Information System</h1>
+    <form id="student-form">
+        <h2>Add/Update Student</h2>
+        <input type="hidden" id="edit-id">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" required>
+        <label for="year">Year:</label>
+        <input type="text" id="year" required>
+        <label for="regdNo">Registration No:</label>
+        <input type="text" id="regdNo" required>
+        <label for="attendance">Attendance:</label>
+        <input type="number" id="attendance" required>
+        <label for="totalFee">Total Fee:</label>
+        <input type="number" id="totalFee" required>
+        <label for="feePending">Fee Pending:</label>
+        <input type="number" id="feePending" required>
+        <label for="examResults">Exam Results:</label>
+        <input type="text" id="examResults" required>
+        <label for="mobileNo">Mobile Number:</label>
+        <input type="text" id="mobileNo" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Student Records</h2>
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Year</th>
+                <th>Registration No</th>
+                <th>Attendance</th>
+                <th>Total Fee</th>
+                <th>Fee Pending</th>
+                <th>Exam Results</th>
+                <th>Mobile Number</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="student-table-body"></tbody>
+    </table>
+
+    <script src="prashu.js"></script>
+</body>
+</html>
